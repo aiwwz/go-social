@@ -20,6 +20,9 @@ const (
 
 	// DefaultAPIRURI default API URI for Google
 	DefaultAPIRURI = "https://www.googleapis.com/oauth2/v2/userinfo"
+
+	// DefaultTokenInfoURI  default TokenInfo for Google
+	DefaultTokenInfoURI = "https://www.googleapis.com/oauth2/v3/tokeninfo"
 )
 
 // Google struct
@@ -31,6 +34,7 @@ type Google struct {
 	TokenURI     string
 	RedirectURI  string
 	Token        string
+	TokenInfoURI string
 	httpClient   *pkg.HTTPClient
 }
 
@@ -45,6 +49,7 @@ func New(clientID, clientSecret, redirectURI string, timeout int) *Google {
 		AuthURI:      DefaultAuthURI,
 		APIURI:       DefaultAPIRURI,
 		TokenURI:     DefaultTokenURI,
+		TokenInfoURI: DefaultTokenInfoURI
 	}
 }
 
