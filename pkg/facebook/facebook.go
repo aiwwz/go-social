@@ -7,8 +7,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/wuriyanto48/go-social/api"
-	"github.com/wuriyanto48/go-social/pkg"
+	"github.com/aiwwz/go-social/api"
+	"github.com/aiwwz/go-social/pkg"
 )
 
 const (

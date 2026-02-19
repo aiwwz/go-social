@@ -1,7 +1,7 @@
 ### Pluggable OAuth library for social login (Google, Facebook, Github, Linkedin)
 
 
-[![GoDoc](https://godoc.org/github.com/wuriyanto48/go-social?status.svg)](https://godoc.org/github.com/wuriyanto48/go-social)
+[![GoDoc](https://godoc.org/github.com/aiwwz/go-social?status.svg)](https://godoc.org/github.com/aiwwz/go-social)
 [![Build Status](https://travis-ci.org/wuriyanto48/go-social.svg?branch=master)](https://travis-ci.org/wuriyanto48/go-social)
 [![CircleCI](https://circleci.com/gh/wuriyanto48/go-social.svg?style=svg)](https://circleci.com/gh/wuriyanto48/go-social)
 
@@ -9,7 +9,7 @@
 
 ### Install
 ```shell
-$ go get github.com/wuriyanto48/go-social
+$ go get github.com/aiwwz/go-social
 ```
 
 ### Usage
@@ -28,8 +28,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/wuriyanto48/go-social"
-	"github.com/wuriyanto48/go-social/pkg/facebook"
+	"github.com/aiwwz/go-social"
+	"github.com/aiwwz/go-social/pkg/facebook"
 )
 
 func main() {

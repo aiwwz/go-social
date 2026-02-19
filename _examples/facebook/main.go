@@ -4,11 +4,11 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/wuriyanto48/go-social"
-	"github.com/wuriyanto48/go-social/pkg/facebook"
+	"github.com/aiwwz/go-social"
+	"github.com/aiwwz/go-social/pkg/facebook"
 )
 
-//https://www.facebook.com/dialog/oauth?client_id={your_client_id}&redirect_uri=http://localhost:8080/callback&response_type=code
+// https://www.facebook.com/dialog/oauth?client_id={your_client_id}&redirect_uri=http://localhost:8080/callback&response_type=code
 func main() {
 	f, err := social.New(social.Facebook, "client_id", "client_secret", "", "http://localhost:8080/callback", "", 0)
 

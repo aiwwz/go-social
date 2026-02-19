@@ -3,12 +3,12 @@ package social
 import (
 	"errors"
 
-	"github.com/wuriyanto48/go-social/api"
-	"github.com/wuriyanto48/go-social/pkg/facebook"
-	"github.com/wuriyanto48/go-social/pkg/github"
-	"github.com/wuriyanto48/go-social/pkg/google"
-	"github.com/wuriyanto48/go-social/pkg/linkedin"
-	"github.com/wuriyanto48/go-social/pkg/microsoftid"
+	"github.com/aiwwz/go-social/api"
+	"github.com/aiwwz/go-social/pkg/facebook"
+	"github.com/aiwwz/go-social/pkg/github"
+	"github.com/aiwwz/go-social/pkg/google"
+	"github.com/aiwwz/go-social/pkg/linkedin"
+	"github.com/aiwwz/go-social/pkg/microsoftid"
 )
 
 // Type generic type of social login
