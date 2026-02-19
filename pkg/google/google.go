@@ -130,3 +130,32 @@ func (g *Google) GetUser(ctx context.Context) (api.Result, error) {
 
 	return &response, nil
 }
+
+// GetUser by tokeninfo function
+func (g *Google) GetTokenInfo(ctx context.Context) (api.Result, error) {
+
+	if g.Token == "" {
+		err := fmt.Errorf("access token: %v,", g.Token)
+		return nil, pkg.NewErrorEmptyValue(err.Error())
+	}
+
+	headers := map[string]string{
+		"Content-Type": "application/json",
+	}
+
+	var response User
+
+	g.TokenInfoURI = fmt.Sprintf("%s?id_token=%s", g.TokenInfoURI, g.Token)
+
+	err := g.httpClient.Execute(ctx, "GET", g.TokenInfoURI, nil, &response, headers)
+
+	if err != nil {
+		return nil, fmt.Errorf("at: %v, err: %v", g.Token, err)
+	}
+
+	if response.Error != nil {
+		return nil, fmt.Errorf("at: %v, err: %v", g.Token, errors.New(response.Error.Message))
+	}
+
+	return &response, nil
+}
