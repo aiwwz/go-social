@@ -49,7 +49,7 @@ func New(clientID, clientSecret, redirectURI string, timeout int) *Google {
 		AuthURI:      DefaultAuthURI,
 		APIURI:       DefaultAPIRURI,
 		TokenURI:     DefaultTokenURI,
-		TokenInfoURI: DefaultTokenInfoURI
+		TokenInfoURI: DefaultTokenInfoURI,
 	}
 }
 
